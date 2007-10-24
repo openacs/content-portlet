@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="content-portlet" package_version="0.1d2" locale="en_US" charset="ISO-8859-1">
+
+  <msg key="add_section">Add new section</msg>
+  <msg key="add_unit">Add new unit</msg>
+  <msg key="admin_portlet_element_pretty_name">Content Portlet</msg>
+  <msg key="admin_portlet_pretty_name">Content Portlet Administration</msg>
+  <msg key="back">Back</msg>
+  <msg key="can_delete">You Can delete this section</msg>
+  <msg key="content">Content</msg>
+  <msg key="decreasing">Decreasing</msg>
+  <msg key="delete_section">Delete Section</msg>
+  <msg key="e_welcome">Welcome to the content section of your course.</msg>
+  <msg key="e_welcome_body">Here you will find the study material that your teacher has uploaded for you.
+If you have any doubts about the usage of this application you can consult the user's guide</msg>
+  <msg key="edit_header">Edit Header Page</msg>
+  <msg key="edit_index">Edit content index</msg>
+  <msg key="edit_name">Edit Name</msg>
+  <msg key="home">Home</msg>
+  <msg key="increasing">Increasing</msg>
+  <msg key="index_page">Content Index page</msg>
+  <msg key="mapped_objects">This section have mapped object</msg>
+  <msg key="Name">Name</msg>
+  <msg key="New">New</msg>
+  <msg key="new_content_admin_portlet">New %element_pretty_name%</msg>
+  <msg key="new_seccion">New Seccion</msg>
+  <msg key="next">Next</msg>
+  <msg key="unit_descirption">Each Unit is divided in the following sections: &lt;br /&gt;&lt;ul&gt;
+&lt;li&gt; Introduction&lt;/li&gt;
+&lt;li&gt; Content&lt;/li&gt;
+&lt;li&gt; Activities&lt;/li&gt;
+&lt;li&gt; Glossary&lt;/li&gt;
+&lt;li&gt; Annexed&lt;/li&gt;
+&lt;/ul&gt;
+These sections can change once the Unit is created.  And it is possible to create new sub-sections.
+</msg>
+  <msg key="welcome">Welcome to GES Web content editor</msg>
+  <msg key="welcome_body">Welcome this section you can create a web content for you coures</msg>
+</message_catalog>

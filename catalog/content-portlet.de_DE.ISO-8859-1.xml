@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="content-portlet" package_version="1.0.1" locale="de_DE" charset="ISO-8859-1">
+
+  <msg key="admin_portlet_element_pretty_name">Content Portlet</msg>
+  <msg key="admin_portlet_pretty_name">Content Portlets verwalten</msg>
+  <msg key="new_content_admin_portlet">Neues %element_pretty_name%</msg>
+  <msg key="Name">Name</msg>
+  <msg key="New">Neu</msg>
+</message_catalog>

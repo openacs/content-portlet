@@ -1,0 +1,24 @@
+::xowiki::PageTemplate new -title "Template de Header" -text {
+
+<div class="btbody">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="80">
+      <img src="/resources/content-portlet/template/imagenes/cursoicon.gif" alt="Unidad 1" height="78" width="80" />
+    </td> 
+    <td>
+      <p class="titfac"><span class="titcurso">@Facultad@</span>
+        <br /> <span class="titcurso">@Carrera@</span>
+        <br /> <span class="titcurso">@Curso@</span>
+      </p>
+    </td> 
+    <td width="176">
+      <div align="right">
+        <img src="/resources/content-portlet/template/imagenes/logos.gif" alt="Galileo - GES" height="78" width="176" />
+      </div>
+    </td> 
+  </tr>
+</table>
+</div>
+
+}

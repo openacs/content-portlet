@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="content-portlet" package_version="0.1d2" locale="es_GT" charset="ISO-8859-1">
+
+  <msg key="add_section">Agregar Sección</msg>
+  <msg key="add_unit">Agregar una Unidad/Capitulo nuevo.</msg>
+  <msg key="admin_portlet_element_pretty_name">Portlet Contenido</msg>
+  <msg key="admin_portlet_pretty_name">Administracion de contenido</msg>
+  <msg key="back">Atrás</msg>
+  <msg key="can_delete">Puede Eliminar esta seccion si desea</msg>
+  <msg key="content">Contenido</msg>
+  <msg key="decreasing">Desender</msg>
+  <msg key="delete_section">Eliminar Sección</msg>
+  <msg key="e_welcome">Bienvenido a la sección de contenido de tu curso.</msg>
+  <msg key="e_welcome_body">Aquí encontrarás el material de estudio que tu  catedrático ha subido.
+Si tienes dudas de cómo usar esta aplicación puedes consultar el manual </msg>
+  <msg key="edit_header">Editar Página de Encabezado</msg>
+  <msg key="edit_index">Editar índice de contenido</msg>
+  <msg key="edit_name">Editar Nombre</msg>
+  <msg key="home">Inicio</msg>
+  <msg key="increasing">Incrementar</msg>
+  <msg key="index_page">Indice de contenido</msg>
+  <msg key="mapped_objects">Esta secciòn NO puede ser borrada, ya que tiene elementos.</msg>
+  <msg key="Name">Nombre</msg>
+  <msg key="New">Nuevo</msg>
+  <msg key="new_content_admin_portlet">Nuevo %element_pretty_name%</msg>
+  <msg key="new_seccion">Nueva Sección</msg>
+  <msg key="next">Siguiente</msg>
+  <msg key="unit_descirption">Cada Unidad o Capitulo se divide en las siguiente secciones:&lt;br /&gt;&lt;ul&gt;
+&lt;li&gt; Introducción&lt;/li&gt;
+&lt;li&gt; Contenido&lt;/li&gt;
+&lt;li&gt; Actividades&lt;/li&gt;
+&lt;li&gt; Glosario&lt;/li&gt;
+&lt;li&gt; Anexo&lt;/li&gt;
+&lt;/ul&gt;
+ Dichas secciones pueden cambiarse una vez creada la Unidad /
+ Capitulo. Y se puede crear adicionalmente nuevas sub-secciones.
+</msg>
+  <msg key="welcome">Bienvenido al editor de contenido web de GES</msg>
+  <msg key="welcome_body">En esta sección usted podrá crear contenido web para su curso 
+Si tiene dudas de cómo usar esta aplicación puede consultar el manual</msg>
+</message_catalog>

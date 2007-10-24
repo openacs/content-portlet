@@ -1,0 +1,45 @@
+::xowiki::PageTemplate new -title "Template Actividades" -text {
+
+<div class="btbody">
+{{adp /packages/xowiki/www/admin/order {page_pos @page_order@ page_id @revision_id@ content_id @package_id@ type @object_type@ dir "decreasing" action 0 page_name @name@ status @publish_status@} }}
+<div align="center">
+  <table width="750" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       <td colspan="3">{{es:header_page -decoration plain }}</td>
+    </tr>
+    <tr>
+     <td colspan="3" align="left">{{adp /packages/content-portlet/www/unit-navbar {page_id @revision_id@ content_id @package_id@} }}</td>
+    </tr>
+    <tr>
+      <td colspan="3"><table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td  rowspan="3" valign="bottom">{{adp /packages/content-portlet/www/complete-navbar {page_pos @page_order@ page_id @revision_id@ content_id @package_id@ type @object_type@} }}</td></tr>
+          <tr>
+            <td width="27" valign="bottom"><img src="/resources/content-portlet/template/imagenes/upcornerL.gif" width="27" height="7" /></td>
+            <td valign="bottom" class="sobretit"><img src="/resources/content-portlet/template/imagenes/fsobretit.gif" width="16" height="7" /></td>
+          </tr>
+      </table></td>
+    </tr>
+        {{adp /packages/content-portlet/www/complete-titlebar {page_pos @page_order@ page_id @revision_id@ content_id @package_id@ my_title "@title@"} }}
+      <tr>
+      <td width="27"><img src="/resources/content-portlet/template/imagenes/bcornerL.gif" width="27" height="21" /></td>
+      <td class="below" align="left">{{adp /packages/content-portlet/www/complete-subnavbar {page_pos @page_order@ page_id @revision_id@ content_id @package_id@ type @object_type@} }}</td>
+      <td width="28"><img src="/resources/content-portlet/template/imagenes/bcornerR.gif" width="28" height="21" /></td>
+    </tr>
+    <tr>
+      <td width="27" class="sideL"><img src="/resources/content-portlet/template/imagenes/fondoL.gif" width="27" height="11" /></td>
+      <td valign="top" class="contenido">@contenido@<br></td>
+      <td width="28" class="sideR"><img src="/resources/content-portlet/template/imagenes/fondoR.gif" width="28" height="11" /></td>
+    </tr>
+    <tr>
+      <td width="27"><img src="/resources/content-portlet/template/imagenes/cornerDL.gif" width="27" height="34" /></td>
+      <td class="down"><img src="/resources/content-portlet/template/imagenes/fondoDown.gif" width="16" height="34" /></td>
+      <td width="28"><img src="/resources/content-portlet/template/imagenes/cornerDR.gif" width="28" height="34" /></td>
+    </tr>
+  </table>
+</div>
+</div>
+
+}

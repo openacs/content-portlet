@@ -1,0 +1,3 @@
+::xowiki::PageInstance new -title "Pagina de Header" -text {
+ Header
+}

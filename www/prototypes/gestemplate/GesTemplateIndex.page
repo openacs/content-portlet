@@ -1,0 +1,7 @@
+::xowiki::Page new -title "[_ content-portlet.index_page]" -text {
+{{es:o_index -decoration plain }}
+{{adp portlets/ges-categories {skin plain-include} }}
+}
+
+
+

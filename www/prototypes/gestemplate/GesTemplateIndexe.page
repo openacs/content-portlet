@@ -1,0 +1,62 @@
+::xowiki::Object new -title "Object index" -text {
+proc content {} {
+
+set community_id [dotlrn_community::get_community_id]	
+set com_package_id [dotlrn_community::get_package_id $community_id]
+set package_id [site_node_apm_integration::get_child_package_id \
+	-package_id $com_package_id \
+	-package_key "xowiki"]
+
+set wk_folder_id [::xowiki::Page require_folder -name xowiki -package_id $package_id]
+
+if { ![db_0or1row select_instance [::xowiki::PageInstance instance_select_query \
+	-folder_id $wk_folder_id -select_attributes {name} \
+	-where_clause "name = 'es:header_page'"]]} {
+
+if { ![db_0or1row select_instance [::xowiki::PageTemplate instance_select_query \
+	-folder_id $wk_folder_id -select_attributes {name} \
+	 -where_clause "name = 'es:Template_de_header'"]]} {
+
+set tmp_item_id $item_id
+
+set fn "[get_server_root]/packages/content-portlet/www/prototypes/gestemplate/GesTemplateheaderpage.page"
+        set standard_page "es:header_page"
+        if {[file readable $fn]} {                                                                                                                          
+            set page [source $fn]
+            $page configure -name $standard_page -parent_id $wk_folder_id -package_id $package_id
+            if {![$page exists title]} {
+                $page set title $template1
+            }
+            $page set page_template $tmp_item_id
+            $page destroy_on_cleanup
+            $page set instance_attributes "Curso Curso Carrera Carrera Facultad Facultad"
+            $page initialize_loaded_object
+            $page save_new
+        }
+   }
+}
+
+set user_id [ad_conn user_id]
+set admin_p [dotlrn::user_can_admin_community_p -user_id $user_id -community_id [dotlrn_community::get_community_id]]
+if {$admin_p} {
+        return {
+         <p>
+          #content-portlet.welcome#
+         </p>
+         <p>
+         #content-portlet.welcome_body#
+         </p>
+         <br />[[es:header_page|#content-portlet.edit_header#]]
+       }
+} else {
+     return {
+          <p>
+          #content-portlet.e_welcome#
+          </p>
+          <p>
+          #content-portlet.e_welcome_body#
+          </p>
+      }
+  }
+}
+}
