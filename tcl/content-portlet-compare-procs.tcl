@@ -382,39 +382,17 @@ ad_proc -private content_category::new_subtree {
 		     -name "Unidad N" \
 		     -user_id $user_id \
 		     -description $description]
-    
-    category::add -tree_id $tree_id \
-	-parent_id $unit_id \
-	-locale $language \
-	-name "Introduccion" -description $description
 
-    category::add -tree_id $tree_id \
-        -parent_id $unit_id \
-        -locale $language \
-        -name "Contenido" \
-	-user_id $user_id \
-	-description $description
+    foreach cat_name {Introduccion Contenido Actividades Glosario Anexo} {
+    
+	category::add -tree_id $tree_id \
+	    -parent_id $unit_id \
+	    -locale $language \
+	    -name $cat_name \
+	    -user_id $user_id \
+	    -description $description
+    }
 
-    category::add -tree_id $tree_id \
-        -parent_id $unit_id \
-        -locale $language \
-        -name "Actividades" \
-	-user_id $user_id \
-	-description $description
-    
-    category::add -tree_id $tree_id \
-        -parent_id $unit_id \
-        -locale $language \
-        -name "Glosario" \
-	-user_id $user_id \
-	-description $description
-    
-    category::add -tree_id $tree_id \
-        -parent_id $unit_id \
-        -locale $language \
-        -name "Anexo" \
-	 -user_id $user_id \
-	-description $description
     return $unit_id
 }
 
