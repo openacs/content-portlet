@@ -441,82 +441,8 @@ ad_proc -private content_category::category_parent {
     }
 }
 		      
+	  
 		  
-		  
-
-ad_proc -private content_page::facultad {
-    {-community_id ""}
-} {
-    if {[empty_string_p $community_id]} {
-	set community_id [dotlrn_community::get_community_id]
-    }
-    set ges_pk [ug::get_ges_pk $community_id]
-    if {![empty_string_p $ges_pk]} {
-	set fac [soap_db::db_string -dbn udb select_facultad {
-	    select distinct gn.nombre_corto
-	    from camainhorariostb mh, cacurshoratb ch,
-	    cacarrerastb cc, gnentidadestb gn 
-	    where mh.horario = ch.horario
-	    and ch.carrera = cc.carrera
-	    and cc.entidad = gn.entidad
-	    and cc.facultad = gn.facultad
-	    and mh.ges_pk = '$ges_pk'} -default "No Facultad"]
-
-	set facultad [string range $fac 2 end]
-    } else {
-	set facultad "Facultad"
-    }
-    return $facultad
-}
-
-ad_proc -private content_page::carrera {
-    {-community_id ""}
-} {
-    if {[empty_string_p $community_id]} {
-        set community_id [dotlrn_community::get_community_id]
-    }
-    set ges_pk [ug::get_ges_pk $community_id]
-    if {![empty_string_p $ges_pk]} {
-
-	set carrera [soap_db::db_list -dbn udb select_carrera {
-	    select distinct cc.nombre_corto
-	    from camainhorariostb mh, cacurshoratb ch,
-	    cacarrerastb cc 
-	    where mh.horario = ch.horario
-	    and ch.carrera = cc.carrera
-	    and mh.ges_pk = '$ges_pk'}]
-	if {[llength $carrera] > 0} {
-	    return [lindex $carrera 0]
-	} else {
-	    return "Carrera"
-	}
-    }
-    return "Carrera"
-}
-
-ad_proc -private content_page::cours_name {
-    {-community_id ""}
-} {
-    if {[empty_string_p $community_id]} {
-        set community_id [dotlrn_community::get_community_id]
-    }
-    set ges_pk [ug::get_ges_pk $community_id]
-    ns_log notice "byron $ges_pk"
-    if {![empty_string_p $ges_pk]} {
-
-	set cours_name [soap_db::db_string -dbn udb select_name {
-	    select distinct cc.nombre
-	    from camainhorariostb mh, cacurshoratb ch,
-	    cacursostb cc 
-	    where  mh.horario = ch.horario
-	    and ch.curso = cc.curso
-	    and mh.ges_pk = '$ges_pk'} -default "Curso"]
-	
-	return $cours_name
-    }
-    return "Curso"
-}
-
 ad_proc -public content_compare::value_compare {
     x
     y
