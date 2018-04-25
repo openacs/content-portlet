@@ -34,7 +34,7 @@
     if {!$no_tree_name} {
       append content "<h3>$my_tree_name</h3>"
     }
-    set categories [list]
+    set categories {}
     set pos 0
     set cattree(0) [::xowiki::CatTree new -volatile -orderby pos -name $my_tree_name]
     foreach category_info [category_tree::get_tree $tree_id] {
