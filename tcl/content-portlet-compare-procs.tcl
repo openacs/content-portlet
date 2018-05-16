@@ -71,7 +71,7 @@ if { ![db_0or1row select_instance [::xowiki::PageInstance instance_select_query 
 				    -where_clause "name = 'es:Template_de_header'"]
     set tmp_item_id $item_id
     
-    set fn "[get_server_root]/packages/content-portlet/www/prototypes/gestemplate/GesTemplateheaderpage.page"
+    set fn "[acs_root_dir]/packages/content-portlet/www/prototypes/gestemplate/GesTemplateheaderpage.page"
     set standard_page "es:header_page"
     if {[file readable $fn]} {
 	set page [source $fn]
