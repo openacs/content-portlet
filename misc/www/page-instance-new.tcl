@@ -66,6 +66,6 @@ set item_id [$page item_id]
 set return_url "[::$package_id package_url][$page set name]"
 set link [::$package_id pretty_link [$page set name]]
 ad_returnredirect  [export_vars -base $link {{m edit} page_template return_url item_id}]
-
+ad_script_abort
 
 

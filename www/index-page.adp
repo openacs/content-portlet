@@ -1,4 +1,4 @@
-<if @admin_p@ true>
+<if @admin_p;literal@ true>
 <p>
 #content-portlet.welcome#
 </p>

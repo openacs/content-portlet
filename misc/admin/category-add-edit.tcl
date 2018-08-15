@@ -1,12 +1,9 @@
-# 
-
 ad_page_contract {
     
     
     
     @author byron Haroldo Linares Roman (bhlr@byronLs-Computer.local)
     @creation-date 2007-08-24
-    @arch-tag: F871480C-371A-46DB-81EF-F5761D7A984C
     @cvs-id $Id$
 } {
     
@@ -57,6 +54,7 @@ if {[exists_and_not_null return_url]} {
     } else {
 	ad_returnredirect $return_url
     }
+    ad_script_abort
 } else {
  #   ad_return_template
 }

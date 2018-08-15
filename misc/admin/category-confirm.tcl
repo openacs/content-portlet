@@ -1,12 +1,9 @@
-# 
-
 ad_page_contract {
     
     
     
     @author byron Haroldo Linares Roman (bhlr@byronLs-Computer.local)
     @creation-date 2007-09-13
-    @arch-tag: F4A0ADC6-B070-4452-B70E-2FB409C8A738
     @cvs-id $Id$
 } {
 

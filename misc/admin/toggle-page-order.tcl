@@ -1,12 +1,9 @@
-# 
-
 ad_page_contract {
     
     
     
     @author byron Haroldo Linares Roman (bhlr@byronLs-Computer.local)
     @creation-date 2007-06-25
-    @arch-tag: E81B62CE-430F-4586-9DFA-2AC7C57672D6
     @cvs-id $Id$
 } {
     page_id:optional
@@ -106,6 +103,7 @@ if {![string match $page_pos "@page_order@"]} {
 	    }
 
 	    ad_returnredirect "${wiki_url}\#cont1"
+	    ad_script_abort
 	}
     } else {
 	set show 0

@@ -1,12 +1,9 @@
-# 
-
 ad_page_contract {
     
     
     
     @author byron Haroldo Linares Roman (bhlr@byronLs-Computer.local)
     @creation-date 2007-08-27
-    @arch-tag: 2D2A97D5-0515-479D-90D6-A22F05718776
     @cvs-id $Id$
 } {
     
@@ -45,4 +42,4 @@ if {$result eq 0} {
     ad_return_complaint 1 "[_ content-portlet.still_contains_subcategories]"
 }
 ad_returnredirect $return_url 
-
+ad_script_abort

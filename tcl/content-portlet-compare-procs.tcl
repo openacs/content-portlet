@@ -1,12 +1,9 @@
-# 
-
 ad_library {
     
     
     
     @author byron Haroldo Linares Roman (bhlr@byronLs-Computer.local)
     @creation-date 2007-06-21
-    @arch-tag: 55D83508-E579-4609-887E-5917B9C5744E
     @cvs-id $Id$
 }
 

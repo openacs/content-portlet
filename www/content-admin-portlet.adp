@@ -1,6 +1,6 @@
 
 Ver P&aacute;ginas de <a href='@applet_url@'>#content-portlet.content#</a><br />
-<if @admin_p@ true>
+<if @admin_p;literal@ true>
 Administrar P&aacute;ginas de <a href="@applet_url@admin/">#content-portlet.content#</a><br />
 </if>
 #xowiki.edit_content_index# <a href="@applet_url@admin/category-view?package_id=@package_id@">Editar</a>

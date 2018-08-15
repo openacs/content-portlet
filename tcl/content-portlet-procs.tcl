@@ -1,12 +1,9 @@
-# 
-
 ad_library {
     
     Procedures to supports content portlets.
     
     @author byron Haroldo Linares Roman (bhlr@byronLs-Computer.local)
     @creation-date 2007-07-04
-    @arch-tag: 16A7A29A-271C-49B1-8787-935755BF5583
     @cvs-id $Id$
 }
 
