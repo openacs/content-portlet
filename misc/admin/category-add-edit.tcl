@@ -11,7 +11,7 @@ ad_page_contract {
     name:notnull
     category_id:integer,optional
     return_url:optional
-    {parent_id:integer,optional [db_null]}
+    {parent_id:integer,optional ""}
     {language "es_GT"}
     {mode 1}
     

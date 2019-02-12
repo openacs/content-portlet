@@ -372,7 +372,7 @@ ad_proc -private content_category::new_subtree {
         set user_id [ad_conn user_id]
     }
     set description "New unit for content"
-    set parent_id [db_null]
+    set parent_id ""
     set unit_id [category::add -tree_id $tree_id \
 		     -parent_id $parent_id \
 		     -locale $language \
